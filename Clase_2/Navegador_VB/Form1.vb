@@ -44,4 +44,8 @@
         bBuscar.Visible = Not bBuscar.Visible
         bIr.Visible = Not bIr.Visible
     End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
 End Class

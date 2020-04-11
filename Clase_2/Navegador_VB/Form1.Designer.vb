@@ -31,6 +31,7 @@ Partial Class Form1
         Me.bVer = New System.Windows.Forms.Button()
         Me.bIr = New System.Windows.Forms.Button()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'bBuscar
@@ -128,12 +129,23 @@ Partial Class Form1
         Me.WebBrowser1.Size = New System.Drawing.Size(1142, 553)
         Me.WebBrowser1.TabIndex = 11
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(722, 42)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(22, 24)
+        Me.Label2.TabIndex = 12
+        Me.Label2.Text = "|"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(1166, 639)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.WebBrowser1)
         Me.Controls.Add(Me.bIr)
         Me.Controls.Add(Me.bVer)
@@ -160,4 +172,5 @@ Partial Class Form1
     Friend WithEvents bVer As Button
     Friend WithEvents bIr As Button
     Friend WithEvents WebBrowser1 As WebBrowser
+    Friend WithEvents Label2 As Label
 End Class
