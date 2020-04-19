@@ -28,31 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Proveedores));
             this.bVolver = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bVolver
             // 
+            this.bVolver.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bVolver.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.bVolver.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bVolver.Location = new System.Drawing.Point(680, 403);
+            this.bVolver.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bVolver.Location = new System.Drawing.Point(664, 364);
             this.bVolver.Name = "bVolver";
             this.bVolver.Size = new System.Drawing.Size(108, 35);
             this.bVolver.TabIndex = 1;
             this.bVolver.Text = "Volver";
-            this.bVolver.UseVisualStyleBackColor = true;
+            this.bVolver.UseVisualStyleBackColor = false;
             this.bVolver.Click += new System.EventHandler(this.bVolver_Click);
             // 
             // Proveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(784, 411);
             this.ControlBox = false;
             this.Controls.Add(this.bVolver);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Proveedores";
-            this.Text = "Proveedores";
+            this.Text = "Menu | Proveedores";
             this.ResumeLayout(false);
 
         }

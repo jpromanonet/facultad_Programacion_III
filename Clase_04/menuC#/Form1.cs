@@ -31,7 +31,7 @@ namespace Menu
 
         private void bSalir_Click(object sender, EventArgs e)
         {
-            DialogResult respuesta = MessageBox.Show("¿Seguro que Quieres Salir?", "Salir del Sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Error, MessageBoxDefaultButton.Button2);
+            DialogResult respuesta = MessageBox.Show("¿Seguro que deseas salir?", "Salir del sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Error, MessageBoxDefaultButton.Button2);
             if (respuesta == DialogResult.Yes)
             {
                 Application.Exit();
@@ -71,6 +71,11 @@ namespace Menu
             Form cliente = new Clientes();
             cliente.BackColor = Color.Red;
             cliente.ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
