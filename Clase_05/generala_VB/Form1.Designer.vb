@@ -39,8 +39,8 @@ Partial Class Form1
         '
         'bSalir
         '
-        Me.bSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.bSalir.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bSalir.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.bSalir.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bSalir.Location = New System.Drawing.Point(713, 456)
         Me.bSalir.Name = "bSalir"
         Me.bSalir.Size = New System.Drawing.Size(69, 44)

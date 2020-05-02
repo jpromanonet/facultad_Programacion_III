@@ -2,7 +2,7 @@
     'Variable para Generar Numeros al Azar Predecibles o no
     Dim Azar As Boolean = True
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles bSalir.Click
-        If MessageBox.Show("¿Seguro que Quieres Salir?", "Salir del Juego", MessageBoxButtons.YesNo, MessageBoxIcon.Error, MessageBoxDefaultButton.Button2) = DialogResult.Yes Then End
+        If MessageBox.Show("¿Seguro que deseas salir?", "Terminar juego", MessageBoxButtons.YesNo, MessageBoxIcon.Error, MessageBoxDefaultButton.Button2) = DialogResult.Yes Then End
     End Sub
     'Funcion para Generar Numeros al Azar
     Function NumDado(Random As Boolean) As Integer
