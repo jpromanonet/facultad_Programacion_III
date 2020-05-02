@@ -118,7 +118,7 @@ Partial Class Form1
         Me.Controls.Add(Me.bSalir)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Form1"
-        Me.Text = "Apretá el Cubilete para tirar los dados"
+        Me.Text = "Generala"
         CType(Me.Cubilete, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Dado1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Dado2, System.ComponentModel.ISupportInitialize).EndInit()

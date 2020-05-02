@@ -30,16 +30,8 @@
             Case 6 : DadoX.Image = My.Resources.dado6
         End Select
     End Sub
-    'Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-    '    Dim monto As Decimal = 1000
-    '    Dim IVA As Decimal = 0, IIBB As Decimal = 0, Interes1 As Decimal = 0
-    '    CalculaValores(monto, IVA, IIBB, Interes1)
-    '    MessageBox.Show("Monto: " & monto & ",IVA: " & IVA & ", IIBB: " & IIBB & ", Interes1: " & Interes1)
-    'End Sub
-    'Sub CalculaValores(ByVal MontoX As Decimal, ByRef IVA As Decimal, ByRef IB As Decimal, ByRef Interes1 As Decimal)
-    '    'IVA Es una Variable Local, que Hace Rferencia a IVA del Buttom2
-    '    IVA = MontoX * 21 / 100
-    '    IB = MontoX * 3 / 100
-    '    Interes1 = MontoX * 9 / 100
-    'End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

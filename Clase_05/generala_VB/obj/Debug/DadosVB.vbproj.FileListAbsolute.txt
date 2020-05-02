@@ -10,3 +10,11 @@ D:\Dev\.NET\Facultad\Dados\DadosVB\obj\Debug\DadosVB.exe
 D:\Dev\.NET\Facultad\Dados\DadosVB\obj\Debug\DadosVB.xml
 D:\Dev\.NET\Facultad\Dados\DadosVB\obj\Debug\DadosVB.pdb
 D:\Dev\.NET\Facultad\Dados\DadosVB\obj\Debug\DadosVB.Form1.resources
+D:\git\facultad_Programacion_III\Clase_05\generala_VB\obj\Debug\DadosVB.vbprojAssemblyReference.cache
+D:\git\facultad_Programacion_III\Clase_05\generala_VB\obj\Debug\DadosVB.Form1.resources
+D:\git\facultad_Programacion_III\Clase_05\generala_VB\obj\Debug\DadosVB.Resources.resources
+D:\git\facultad_Programacion_III\Clase_05\generala_VB\obj\Debug\DadosVB.vbproj.GenerateResource.cache
+D:\git\facultad_Programacion_III\Clase_05\generala_VB\obj\Debug\DadosVB.vbproj.CoreCompileInputs.cache
+D:\git\facultad_Programacion_III\Clase_05\generala_VB\obj\Debug\DadosVB.exe
+D:\git\facultad_Programacion_III\Clase_05\generala_VB\obj\Debug\DadosVB.xml
+D:\git\facultad_Programacion_III\Clase_05\generala_VB\obj\Debug\DadosVB.pdb
