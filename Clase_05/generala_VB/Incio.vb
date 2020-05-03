@@ -13,10 +13,10 @@
             mesa.Show()
             Me.Close()
         Else
-            MessageBox.Show("Debes Completar el Nombre de los Jugadores")
+            MessageBox.Show("Es requisito ingresar a los jugadores.")
         End If
     End Sub
     Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
-        If MessageBox.Show("¿Seguro que Quieres Salir?", "Salir del Juego", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = DialogResult.Yes Then Me.Close()
+        If MessageBox.Show("¿Seguro que deseas salir?", "Salir del Juego", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) = DialogResult.Yes Then Me.Close()
     End Sub
 End Class
