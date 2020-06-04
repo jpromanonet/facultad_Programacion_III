@@ -145,7 +145,7 @@ Partial Class login
         Me.btnLogin.FlatAppearance.BorderSize = 0
         Me.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogin.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogin.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.White
         Me.btnLogin.Image = Global.sistema.My.Resources.Resources.Login_37128
         Me.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -153,8 +153,7 @@ Partial Class login
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(185, 64)
         Me.btnLogin.TabIndex = 7
-        Me.btnLogin.Text = "&Iniciar Sesión"
-        Me.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = True
         '
         'Label2
