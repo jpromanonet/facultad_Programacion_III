@@ -57,11 +57,11 @@ Partial Class login
         'lLogin
         '
         Me.lLogin.AutoSize = True
-        Me.lLogin.Font = New System.Drawing.Font("Comic Sans MS", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lLogin.Font = New System.Drawing.Font("Consolas", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lLogin.ForeColor = System.Drawing.Color.White
         Me.lLogin.Location = New System.Drawing.Point(295, 30)
         Me.lLogin.Name = "lLogin"
-        Me.lLogin.Size = New System.Drawing.Size(177, 35)
+        Me.lLogin.Size = New System.Drawing.Size(225, 32)
         Me.lLogin.TabIndex = 3
         Me.lLogin.Text = "Iniciar Sesión"
         '
@@ -69,11 +69,11 @@ Partial Class login
         '
         Me.lblSistema.AutoSize = True
         Me.lblSistema.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblSistema.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSistema.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSistema.ForeColor = System.Drawing.Color.White
         Me.lblSistema.Location = New System.Drawing.Point(107, 9)
         Me.lblSistema.Name = "lblSistema"
-        Me.lblSistema.Size = New System.Drawing.Size(93, 81)
+        Me.lblSistema.Size = New System.Drawing.Size(106, 72)
         Me.lblSistema.TabIndex = 1
         Me.lblSistema.Text = "Sistema " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "de " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Gestion"
         Me.lblSistema.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
