@@ -89,6 +89,7 @@ Partial Class login
         '
         'Panel2
         '
+        Me.Panel2.BackColor = System.Drawing.SystemColors.HotTrack
         Me.Panel2.Controls.Add(Me.btnSalir)
         Me.Panel2.Controls.Add(Me.btnLogin)
         Me.Panel2.Controls.Add(Me.Label2)
