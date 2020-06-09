@@ -28,9 +28,7 @@ Partial Class login
         Me.lblSistema = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnSalir = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.tClave = New System.Windows.Forms.TextBox()
@@ -51,7 +49,7 @@ Partial Class login
         Me.pTitulo.Dock = System.Windows.Forms.DockStyle.Top
         Me.pTitulo.Location = New System.Drawing.Point(0, 0)
         Me.pTitulo.Name = "pTitulo"
-        Me.pTitulo.Size = New System.Drawing.Size(650, 103)
+        Me.pTitulo.Size = New System.Drawing.Size(750, 103)
         Me.pTitulo.TabIndex = 0
         '
         'lLogin
@@ -91,27 +89,16 @@ Partial Class login
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.Panel1)
         Me.Panel2.Controls.Add(Me.btnSalir)
-        Me.Panel2.Controls.Add(Me.Panel3)
         Me.Panel2.Controls.Add(Me.btnLogin)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.tClave)
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Controls.Add(Me.tUsuario)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(0, 103)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(650, 397)
+        Me.Panel2.Size = New System.Drawing.Size(750, 397)
         Me.Panel2.TabIndex = 1
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.Panel1.Location = New System.Drawing.Point(532, 333)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(8, 64)
-        Me.Panel1.TabIndex = 10
         '
         'btnSalir
         '
@@ -123,21 +110,13 @@ Partial Class login
         Me.btnSalir.ForeColor = System.Drawing.Color.White
         Me.btnSalir.Image = Global.sistema.My.Resources.Resources.salir
         Me.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSalir.Location = New System.Drawing.Point(540, 333)
+        Me.btnSalir.Location = New System.Drawing.Point(540, 238)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(98, 64)
         Me.btnSalir.TabIndex = 9
         Me.btnSalir.Text = "&Salir"
         Me.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnSalir.UseVisualStyleBackColor = True
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.Panel3.Location = New System.Drawing.Point(436, 114)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(8, 64)
-        Me.Panel3.TabIndex = 8
         '
         'btnLogin
         '
@@ -149,7 +128,7 @@ Partial Class login
         Me.btnLogin.ForeColor = System.Drawing.Color.White
         Me.btnLogin.Image = Global.sistema.My.Resources.Resources.Login_37128
         Me.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnLogin.Location = New System.Drawing.Point(444, 114)
+        Me.btnLogin.Location = New System.Drawing.Point(216, 238)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(185, 64)
         Me.btnLogin.TabIndex = 7
@@ -159,44 +138,44 @@ Partial Class login
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Image = Global.sistema.My.Resources.Resources.security_protection_protect_key_password_login_108554
         Me.Label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Label2.Location = New System.Drawing.Point(32, 170)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(146, 27)
+        Me.Label2.Size = New System.Drawing.Size(178, 24)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "    Contraseña"
         '
         'tClave
         '
-        Me.tClave.Location = New System.Drawing.Point(184, 170)
+        Me.tClave.Location = New System.Drawing.Point(216, 168)
         Me.tClave.Name = "tClave"
         Me.tClave.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.tClave.Size = New System.Drawing.Size(237, 26)
+        Me.tClave.Size = New System.Drawing.Size(422, 26)
         Me.tClave.TabIndex = 5
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Image = Global.sistema.My.Resources.Resources.loginmanager_10029
         Me.Label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label1.Location = New System.Drawing.Point(64, 105)
+        Me.Label1.Location = New System.Drawing.Point(36, 104)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(112, 27)
+        Me.Label1.Size = New System.Drawing.Size(142, 24)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "    Usuario"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'tUsuario
         '
-        Me.tUsuario.Location = New System.Drawing.Point(184, 105)
+        Me.tUsuario.Location = New System.Drawing.Point(216, 105)
         Me.tUsuario.MaxLength = 10
         Me.tUsuario.Name = "tUsuario"
-        Me.tUsuario.Size = New System.Drawing.Size(237, 26)
+        Me.tUsuario.Size = New System.Drawing.Size(422, 26)
         Me.tUsuario.TabIndex = 0
         '
         'login
@@ -205,14 +184,14 @@ Partial Class login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(82, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(650, 500)
+        Me.ClientSize = New System.Drawing.Size(750, 500)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.pTitulo)
         Me.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
-        Me.MaximumSize = New System.Drawing.Size(650, 500)
+        Me.MaximumSize = New System.Drawing.Size(750, 500)
         Me.Name = "login"
         Me.Text = "login"
         Me.pTitulo.ResumeLayout(False)
@@ -233,8 +212,6 @@ Partial Class login
     Friend WithEvents tClave As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents tUsuario As TextBox
-    Friend WithEvents Panel3 As Panel
     Friend WithEvents btnLogin As Button
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents btnSalir As Button
 End Class
