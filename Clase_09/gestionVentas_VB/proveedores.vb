@@ -68,19 +68,19 @@ Public Class proveedores
 
     End Sub
 
-    Private Sub InicioToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles InicioToolStripMenuItem.Click
+    Private Sub InicioToolStripMenuItem_Click_1(sender As Object, e As EventArgs)
         Dim inicio As New inicio
         inicio.Show()
         Me.Close()
     End Sub
 
-    Private Sub SalirToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
+    Private Sub SalirToolStripMenuItem_Click_1(sender As Object, e As EventArgs)
         Dim login As New login
         login.Show()
         Me.Close()
     End Sub
 
-    Private Sub ClientesToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles ClientesToolStripMenuItem.Click
+    Private Sub ClientesToolStripMenuItem_Click_1(sender As Object, e As EventArgs)
         Dim ambClientes As New clientes
         ambClientes.Show()
         Me.Close()
@@ -243,15 +243,19 @@ Public Class proveedores
         End If
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
         Dim inicio As New inicio
         inicio.Show()
         Me.Close()
     End Sub
 
-    Private Sub lblSistema_Click(sender As Object, e As EventArgs) Handles lblSistema.Click
+    Private Sub lblSistema_Click(sender As Object, e As EventArgs)
         Dim inicio As New inicio
         inicio.Show()
         Me.Close()
+    End Sub
+
+    Private Sub pnlContenido_Paint(sender As Object, e As PaintEventArgs) Handles pnlContenido.Paint
+
     End Sub
 End Class
