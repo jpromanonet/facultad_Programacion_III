@@ -199,6 +199,7 @@
     <Content Include="gestionSis.ico" />
     <None Include="Resources\security-protection-protect-key-password-login_108554.ico" />
     <None Include="Resources\loginmanager_10029.ico" />
+    <None Include="Resources\Login_37128.ico" />
     <None Include="Resources\delivery_truck_icon_129109.ico" />
     <None Include="Resources\delivery-truck_icon-icons.com_72248.ico" />
     <None Include="Resources\delivery_truck_icon_129545.ico" />

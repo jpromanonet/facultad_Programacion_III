@@ -38,6 +38,7 @@ Partial Class proveedores
         Me.lblSistema = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pnlContenido = New System.Windows.Forms.Panel()
+        Me.lIdProveedor = New System.Windows.Forms.Label()
         Me.pCampos = New System.Windows.Forms.Panel()
         Me.tEmail = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -48,6 +49,8 @@ Partial Class proveedores
         Me.tLocalidad = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.tComentario = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.tTelefono = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
@@ -63,9 +66,8 @@ Partial Class proveedores
         Me.Label4 = New System.Windows.Forms.Label()
         Me.tApellido = New System.Windows.Forms.TextBox()
         Me.gridProveedores = New System.Windows.Forms.DataGridView()
-        Me.nproveedor = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ApeYNom = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.cuit = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.tBuscar = New System.Windows.Forms.TextBox()
@@ -74,10 +76,9 @@ Partial Class proveedores
         Me.InicioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.lIdProveedor = New System.Windows.Forms.Label()
+        Me.nproveedor = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ApeYNom = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cuit = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.pnlTitulo.SuspendLayout()
         CType(Me.pRestaurar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pMini, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -274,6 +275,7 @@ Partial Class proveedores
         Me.pnlContenido.Controls.Add(Me.lIdProveedor)
         Me.pnlContenido.Controls.Add(Me.pCampos)
         Me.pnlContenido.Controls.Add(Me.gridProveedores)
+        Me.pnlContenido.Controls.Add(Me.Label2)
         Me.pnlContenido.Controls.Add(Me.Panel4)
         Me.pnlContenido.Controls.Add(Me.Label1)
         Me.pnlContenido.Controls.Add(Me.btnBuscar)
@@ -285,6 +287,17 @@ Partial Class proveedores
         Me.pnlContenido.Name = "pnlContenido"
         Me.pnlContenido.Size = New System.Drawing.Size(1100, 615)
         Me.pnlContenido.TabIndex = 4
+        '
+        'lIdProveedor
+        '
+        Me.lIdProveedor.AutoSize = True
+        Me.lIdProveedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(82, Byte), Integer))
+        Me.lIdProveedor.ForeColor = System.Drawing.Color.White
+        Me.lIdProveedor.Location = New System.Drawing.Point(57, 90)
+        Me.lIdProveedor.Name = "lIdProveedor"
+        Me.lIdProveedor.Size = New System.Drawing.Size(15, 16)
+        Me.lIdProveedor.TabIndex = 95
+        Me.lIdProveedor.Text = "0"
         '
         'pCampos
         '
@@ -317,12 +330,12 @@ Partial Class proveedores
         Me.pCampos.ForeColor = System.Drawing.Color.White
         Me.pCampos.Location = New System.Drawing.Point(56, 109)
         Me.pCampos.Name = "pCampos"
-        Me.pCampos.Size = New System.Drawing.Size(514, 494)
+        Me.pCampos.Size = New System.Drawing.Size(514, 503)
         Me.pCampos.TabIndex = 58
         '
         'tEmail
         '
-        Me.tEmail.Location = New System.Drawing.Point(126, 335)
+        Me.tEmail.Location = New System.Drawing.Point(117, 335)
         Me.tEmail.MaxLength = 35
         Me.tEmail.Name = "tEmail"
         Me.tEmail.Size = New System.Drawing.Size(373, 30)
@@ -332,7 +345,7 @@ Partial Class proveedores
         '
         Me.Label15.AutoSize = True
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(358, 226)
+        Me.Label15.Location = New System.Drawing.Point(338, 226)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(36, 23)
         Me.Label15.TabIndex = 45
@@ -344,23 +357,23 @@ Partial Class proveedores
         Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(7, 154)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(52, 23)
+        Me.Label7.Size = New System.Drawing.Size(141, 23)
         Me.Label7.TabIndex = 40
-        Me.Label7.Text = "CUIT"
+        Me.Label7.Text = "CUIT (solo núm.)"
         '
         'tCUIT
         '
-        Me.tCUIT.Location = New System.Drawing.Point(126, 151)
+        Me.tCUIT.Location = New System.Drawing.Point(154, 151)
         Me.tCUIT.MaxLength = 30
         Me.tCUIT.Name = "tCUIT"
-        Me.tCUIT.Size = New System.Drawing.Size(373, 30)
+        Me.tCUIT.Size = New System.Drawing.Size(322, 30)
         Me.tCUIT.TabIndex = 39
         '
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.ForeColor = System.Drawing.Color.White
-        Me.CheckBox1.Location = New System.Drawing.Point(413, 118)
+        Me.CheckBox1.Location = New System.Drawing.Point(390, 115)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(86, 27)
         Me.CheckBox1.TabIndex = 38
@@ -379,10 +392,10 @@ Partial Class proveedores
         '
         'tLocalidad
         '
-        Me.tLocalidad.Location = New System.Drawing.Point(126, 223)
+        Me.tLocalidad.Location = New System.Drawing.Point(103, 223)
         Me.tLocalidad.MaxLength = 20
         Me.tLocalidad.Name = "tLocalidad"
-        Me.tLocalidad.Size = New System.Drawing.Size(226, 30)
+        Me.tLocalidad.Size = New System.Drawing.Size(232, 30)
         Me.tLocalidad.TabIndex = 36
         '
         'Label16
@@ -397,13 +410,31 @@ Partial Class proveedores
         '
         'tComentario
         '
-        Me.tComentario.Location = New System.Drawing.Point(126, 371)
+        Me.tComentario.Location = New System.Drawing.Point(117, 371)
         Me.tComentario.MaxLength = 200
         Me.tComentario.Multiline = True
         Me.tComentario.Name = "tComentario"
         Me.tComentario.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.tComentario.Size = New System.Drawing.Size(373, 109)
+        Me.tComentario.Size = New System.Drawing.Size(373, 89)
         Me.tComentario.TabIndex = 17
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(7, 121)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(177, 23)
+        Me.Label12.TabIndex = 25
+        Me.Label12.Text = "Fecha de Nacimiento:"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.DateTimePicker1.Location = New System.Drawing.Point(190, 115)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(168, 30)
+        Me.DateTimePicker1.TabIndex = 13
         '
         'Label11
         '
@@ -417,7 +448,7 @@ Partial Class proveedores
         '
         'tTelefono
         '
-        Me.tTelefono.Location = New System.Drawing.Point(126, 298)
+        Me.tTelefono.Location = New System.Drawing.Point(117, 298)
         Me.tTelefono.MaxLength = 35
         Me.tTelefono.Name = "tTelefono"
         Me.tTelefono.Size = New System.Drawing.Size(373, 30)
@@ -435,7 +466,7 @@ Partial Class proveedores
         '
         'tProvincia
         '
-        Me.tProvincia.Location = New System.Drawing.Point(126, 259)
+        Me.tProvincia.Location = New System.Drawing.Point(117, 259)
         Me.tProvincia.MaxLength = 30
         Me.tProvincia.Name = "tProvincia"
         Me.tProvincia.Size = New System.Drawing.Size(373, 30)
@@ -453,7 +484,7 @@ Partial Class proveedores
         '
         'tCP
         '
-        Me.tCP.Location = New System.Drawing.Point(400, 223)
+        Me.tCP.Location = New System.Drawing.Point(377, 223)
         Me.tCP.MaxLength = 10
         Me.tCP.Name = "tCP"
         Me.tCP.Size = New System.Drawing.Size(99, 30)
@@ -471,10 +502,10 @@ Partial Class proveedores
         '
         'tDireccion
         '
-        Me.tDireccion.Location = New System.Drawing.Point(126, 187)
+        Me.tDireccion.Location = New System.Drawing.Point(117, 187)
         Me.tDireccion.MaxLength = 50
         Me.tDireccion.Name = "tDireccion"
-        Me.tDireccion.Size = New System.Drawing.Size(373, 30)
+        Me.tDireccion.Size = New System.Drawing.Size(359, 30)
         Me.tDireccion.TabIndex = 9
         '
         'Label6
@@ -483,16 +514,16 @@ Partial Class proveedores
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(7, 82)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(44, 23)
+        Me.Label6.Size = New System.Drawing.Size(133, 23)
         Me.Label6.TabIndex = 14
-        Me.Label6.Text = "DNI"
+        Me.Label6.Text = "DNI (solo núm.)"
         '
         'tDNI
         '
-        Me.tDNI.Location = New System.Drawing.Point(126, 79)
+        Me.tDNI.Location = New System.Drawing.Point(140, 79)
         Me.tDNI.MaxLength = 8
         Me.tDNI.Name = "tDNI"
-        Me.tDNI.Size = New System.Drawing.Size(373, 30)
+        Me.tDNI.Size = New System.Drawing.Size(336, 30)
         Me.tDNI.TabIndex = 7
         '
         'Label5
@@ -507,10 +538,10 @@ Partial Class proveedores
         '
         'tNombre
         '
-        Me.tNombre.Location = New System.Drawing.Point(126, 43)
+        Me.tNombre.Location = New System.Drawing.Point(117, 43)
         Me.tNombre.MaxLength = 30
         Me.tNombre.Name = "tNombre"
-        Me.tNombre.Size = New System.Drawing.Size(373, 30)
+        Me.tNombre.Size = New System.Drawing.Size(359, 30)
         Me.tNombre.TabIndex = 5
         '
         'Label4
@@ -525,10 +556,10 @@ Partial Class proveedores
         '
         'tApellido
         '
-        Me.tApellido.Location = New System.Drawing.Point(126, 7)
+        Me.tApellido.Location = New System.Drawing.Point(117, 7)
         Me.tApellido.MaxLength = 30
         Me.tApellido.Name = "tApellido"
-        Me.tApellido.Size = New System.Drawing.Size(373, 30)
+        Me.tApellido.Size = New System.Drawing.Size(359, 30)
         Me.tApellido.TabIndex = 4
         '
         'gridProveedores
@@ -538,33 +569,30 @@ Partial Class proveedores
         Me.gridProveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.gridProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.gridProveedores.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.nproveedor, Me.ApeYNom, Me.cuit})
-        Me.gridProveedores.Location = New System.Drawing.Point(592, 100)
+        Me.gridProveedores.Location = New System.Drawing.Point(630, 100)
         Me.gridProveedores.Name = "gridProveedores"
         Me.gridProveedores.ReadOnly = True
-        Me.gridProveedores.Size = New System.Drawing.Size(496, 503)
+        Me.gridProveedores.Size = New System.Drawing.Size(458, 503)
         Me.gridProveedores.TabIndex = 7
         '
-        'nproveedor
+        'Label2
         '
-        Me.nproveedor.DataPropertyName = "nproveedor"
-        Me.nproveedor.HeaderText = "nproveedor"
-        Me.nproveedor.Name = "nproveedor"
-        Me.nproveedor.ReadOnly = True
-        Me.nproveedor.Visible = False
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(523, 81)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(151, 16)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "*Si dejas Vacio Trae Todo"
         '
-        'ApeYNom
+        'Panel4
         '
-        Me.ApeYNom.DataPropertyName = "ApeYNom"
-        Me.ApeYNom.HeaderText = "Apellido y Nombre"
-        Me.ApeYNom.Name = "ApeYNom"
-        Me.ApeYNom.ReadOnly = True
-        '
-        'cuit
-        '
-        Me.cuit.DataPropertyName = "CUIT"
-        Me.cuit.HeaderText = "CUIT"
-        Me.cuit.Name = "cuit"
-        Me.cuit.ReadOnly = True
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.Panel4.Location = New System.Drawing.Point(841, 46)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(8, 38)
+        Me.Panel4.TabIndex = 4
         '
         'Label1
         '
@@ -573,9 +601,9 @@ Partial Class proveedores
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(59, 51)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(61, 23)
+        Me.Label1.Size = New System.Drawing.Size(343, 23)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Buscar"
+        Me.Label1.Text = "Ingrese Nombre para Buscar un Proveedor"
         '
         'btnBuscar
         '
@@ -596,9 +624,9 @@ Partial Class proveedores
         'tBuscar
         '
         Me.tBuscar.Font = New System.Drawing.Font("Comic Sans MS", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tBuscar.Location = New System.Drawing.Point(126, 48)
+        Me.tBuscar.Location = New System.Drawing.Point(412, 48)
         Me.tBuscar.Name = "tBuscar"
-        Me.tBuscar.Size = New System.Drawing.Size(693, 30)
+        Me.tBuscar.Size = New System.Drawing.Size(392, 30)
         Me.tBuscar.TabIndex = 1
         '
         'menuClientes
@@ -624,7 +652,7 @@ Partial Class proveedores
         Me.InicioToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.InicioToolStripMenuItem.Image = Global.sistema.My.Resources.Resources.gestion
         Me.InicioToolStripMenuItem.Name = "InicioToolStripMenuItem"
-        Me.InicioToolStripMenuItem.Size = New System.Drawing.Size(121, 22)
+        Me.InicioToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.InicioToolStripMenuItem.Text = "Inicio"
         '
         'ClientesToolStripMenuItem
@@ -632,7 +660,7 @@ Partial Class proveedores
         Me.ClientesToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.ClientesToolStripMenuItem.Image = Global.sistema.My.Resources.Resources.clientes
         Me.ClientesToolStripMenuItem.Name = "ClientesToolStripMenuItem"
-        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(121, 22)
+        Me.ClientesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ClientesToolStripMenuItem.Text = "Clientes"
         '
         'SalirToolStripMenuItem
@@ -640,45 +668,30 @@ Partial Class proveedores
         Me.SalirToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
         Me.SalirToolStripMenuItem.Image = Global.sistema.My.Resources.Resources.salir
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(121, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
-        'Label12
+        'nproveedor
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(7, 121)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(100, 23)
-        Me.Label12.TabIndex = 25
-        Me.Label12.Text = "Nacimiento:"
+        Me.nproveedor.DataPropertyName = "nproveedor"
+        Me.nproveedor.HeaderText = "nproveedor"
+        Me.nproveedor.Name = "nproveedor"
+        Me.nproveedor.ReadOnly = True
+        Me.nproveedor.Visible = False
         '
-        'DateTimePicker1
+        'ApeYNom
         '
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(126, 115)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(226, 30)
-        Me.DateTimePicker1.TabIndex = 13
+        Me.ApeYNom.DataPropertyName = "ApeYNom"
+        Me.ApeYNom.HeaderText = "Apellido y Nombre"
+        Me.ApeYNom.Name = "ApeYNom"
+        Me.ApeYNom.ReadOnly = True
         '
-        'Panel4
+        'cuit
         '
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.Panel4.Location = New System.Drawing.Point(841, 46)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(8, 38)
-        Me.Panel4.TabIndex = 4
-        '
-        'lIdProveedor
-        '
-        Me.lIdProveedor.AutoSize = True
-        Me.lIdProveedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(82, Byte), Integer))
-        Me.lIdProveedor.ForeColor = System.Drawing.Color.White
-        Me.lIdProveedor.Location = New System.Drawing.Point(57, 90)
-        Me.lIdProveedor.Name = "lIdProveedor"
-        Me.lIdProveedor.Size = New System.Drawing.Size(15, 16)
-        Me.lIdProveedor.TabIndex = 95
-        Me.lIdProveedor.Text = "0"
+        Me.cuit.DataPropertyName = "CUIT"
+        Me.cuit.HeaderText = "CUIT"
+        Me.cuit.Name = "cuit"
+        Me.cuit.ReadOnly = True
         '
         'proveedores
         '
@@ -730,6 +743,7 @@ Partial Class proveedores
     Friend WithEvents lblSistema As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents pnlContenido As Panel
+    Friend WithEvents lIdProveedor As Label
     Friend WithEvents pCampos As Panel
     Friend WithEvents tEmail As TextBox
     Friend WithEvents Label15 As Label
@@ -740,6 +754,8 @@ Partial Class proveedores
     Friend WithEvents tLocalidad As TextBox
     Friend WithEvents Label16 As Label
     Friend WithEvents tComentario As TextBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Label11 As Label
     Friend WithEvents tTelefono As TextBox
     Friend WithEvents Label10 As Label
@@ -755,6 +771,8 @@ Partial Class proveedores
     Friend WithEvents Label4 As Label
     Friend WithEvents tApellido As TextBox
     Friend WithEvents gridProveedores As DataGridView
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Panel4 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents btnBuscar As Button
     Friend WithEvents tBuscar As TextBox
@@ -766,8 +784,4 @@ Partial Class proveedores
     Friend WithEvents nproveedor As DataGridViewTextBoxColumn
     Friend WithEvents ApeYNom As DataGridViewTextBoxColumn
     Friend WithEvents cuit As DataGridViewTextBoxColumn
-    Friend WithEvents Label12 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents lIdProveedor As Label
-    Friend WithEvents Panel4 As Panel
 End Class

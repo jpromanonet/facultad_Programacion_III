@@ -67,4 +67,8 @@ Public Class login
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
         Application.ExitThread()
     End Sub
+
+    Private Sub lLogin_Click(sender As Object, e As EventArgs) Handles lLogin.Click
+
+    End Sub
 End Class
