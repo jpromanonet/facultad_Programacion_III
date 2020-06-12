@@ -41,7 +41,7 @@ Partial Class login
         '
         'pTitulo
         '
-        Me.pTitulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(40, Byte), Integer))
+        Me.pTitulo.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.pTitulo.Controls.Add(Me.lLogin)
         Me.pTitulo.Controls.Add(Me.lblSistema)
         Me.pTitulo.Controls.Add(Me.PictureBox1)
@@ -49,7 +49,7 @@ Partial Class login
         Me.pTitulo.Dock = System.Windows.Forms.DockStyle.Top
         Me.pTitulo.Location = New System.Drawing.Point(0, 0)
         Me.pTitulo.Name = "pTitulo"
-        Me.pTitulo.Size = New System.Drawing.Size(1000, 97)
+        Me.pTitulo.Size = New System.Drawing.Size(928, 97)
         Me.pTitulo.TabIndex = 0
         '
         'lLogin
@@ -57,11 +57,11 @@ Partial Class login
         Me.lLogin.AutoSize = True
         Me.lLogin.Font = New System.Drawing.Font("Consolas", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lLogin.ForeColor = System.Drawing.Color.White
-        Me.lLogin.Location = New System.Drawing.Point(206, 32)
+        Me.lLogin.Location = New System.Drawing.Point(12, 49)
         Me.lLogin.Name = "lLogin"
-        Me.lLogin.Size = New System.Drawing.Size(780, 32)
+        Me.lLogin.Size = New System.Drawing.Size(375, 32)
         Me.lLogin.TabIndex = 3
-        Me.lLogin.Text = "Ingresa tu usuario y contraseña para iniciar sesión"
+        Me.lLogin.Text = "Completa e inicia sesión"
         '
         'lblSistema
         '
@@ -69,18 +69,18 @@ Partial Class login
         Me.lblSistema.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblSistema.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSistema.ForeColor = System.Drawing.Color.White
-        Me.lblSistema.Location = New System.Drawing.Point(107, 9)
+        Me.lblSistema.Location = New System.Drawing.Point(12, 9)
         Me.lblSistema.Name = "lblSistema"
-        Me.lblSistema.Size = New System.Drawing.Size(93, 81)
+        Me.lblSistema.Size = New System.Drawing.Size(164, 27)
         Me.lblSistema.TabIndex = 1
-        Me.lblSistema.Text = "Sistema " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "de " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Gestion"
+        Me.lblSistema.Text = "Gestion 2020 v1"
         Me.lblSistema.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox1
         '
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox1.Image = Global.sistema.My.Resources.Resources.gestion
-        Me.PictureBox1.Location = New System.Drawing.Point(9, 9)
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(830, 9)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(86, 81)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -105,11 +105,11 @@ Partial Class login
         '
         Me.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSalir.FlatAppearance.BorderSize = 0
-        Me.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSalir.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSalir.ForeColor = System.Drawing.Color.Black
-        Me.btnSalir.Image = Global.sistema.My.Resources.Resources.salir
+        Me.btnSalir.Image = CType(resources.GetObject("btnSalir.Image"), System.Drawing.Image)
         Me.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSalir.Location = New System.Drawing.Point(588, 472)
         Me.btnSalir.Name = "btnSalir"
@@ -123,11 +123,11 @@ Partial Class login
         '
         Me.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnLogin.FlatAppearance.BorderSize = 0
-        Me.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.Black
-        Me.btnLogin.Image = Global.sistema.My.Resources.Resources.Login_37128
+        Me.btnLogin.Image = CType(resources.GetObject("btnLogin.Image"), System.Drawing.Image)
         Me.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnLogin.Location = New System.Drawing.Point(492, 389)
         Me.btnLogin.Name = "btnLogin"
@@ -187,7 +187,8 @@ Partial Class login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gainsboro
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(1000, 668)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(928, 668)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.pTitulo)
         Me.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))

@@ -1,12 +1,8 @@
-﻿'Clase para Activar la Interpolacion (Poder Mover sin la barra de menu)
-Imports System.Runtime.InteropServices
-'Clases para ADO, para la Conexion con la DB
+﻿Imports System.Runtime.InteropServices
 Imports System.Data.SqlClient
 Public Class login
-    'Para Realizar las Conexiones
     Dim ar As String
     Dim connection As New SqlConnection("" & LeerConfig(ar) & "")
-    'Funciones para mover la ventana sin la barra de titulo
     Private Const WM_SYSCOMMAND As Integer = &H112&
     Private Const MOUSE_MOVE As Integer = &HF012&
 
