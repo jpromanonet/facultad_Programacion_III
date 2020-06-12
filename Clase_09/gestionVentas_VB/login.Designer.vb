@@ -41,7 +41,7 @@ Partial Class login
         '
         'pTitulo
         '
-        Me.pTitulo.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.pTitulo.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.pTitulo.Controls.Add(Me.lLogin)
         Me.pTitulo.Controls.Add(Me.lblSistema)
         Me.pTitulo.Controls.Add(Me.PictureBox1)
@@ -67,13 +67,13 @@ Partial Class login
         '
         Me.lblSistema.AutoSize = True
         Me.lblSistema.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.lblSistema.Font = New System.Drawing.Font("Comic Sans MS", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSistema.Font = New System.Drawing.Font("Comic Sans MS", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSistema.ForeColor = System.Drawing.Color.White
         Me.lblSistema.Location = New System.Drawing.Point(12, 9)
         Me.lblSistema.Name = "lblSistema"
-        Me.lblSistema.Size = New System.Drawing.Size(164, 27)
+        Me.lblSistema.Size = New System.Drawing.Size(119, 30)
         Me.lblSistema.TabIndex = 1
-        Me.lblSistema.Text = "Gestion 2020 v1"
+        Me.lblSistema.Text = "Gestionsys"
         Me.lblSistema.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox1
