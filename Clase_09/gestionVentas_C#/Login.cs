@@ -33,21 +33,16 @@ namespace sistema
             /**Creamos el Objeto*/
             routines = new Routines();
         }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
         #region Metodos Para Iniciar Sesion
         /**Para Realizar el Login*/
         public void iniciarSesion()
         {
             txtUsuario.Text = txtUsuario.Text.Replace("'", "").Replace(" ", "").Replace("\"", "").ToUpper();
-            if (txtUsuario.Text=="ADMIN" && txtClave.Text == "administrador")
+            if (txtUsuario.Text=="ROOT" && txtClave.Text == "administrador")
             {
                 /**Guardamos el Usuario*/
-                Routines.nameUser = "Usuario Administrador";
-                Routines.lastNameUser = "Administrador";
+                Routines.nameUser = "Usuario Admin";
+                Routines.lastNameUser = "root";
                 /**Vamos al Inicio*/
                 Inicio inicio = new Inicio();
                 inicio.Show();
@@ -76,13 +71,17 @@ namespace sistema
         }
 
         #endregion Metodos Para Iniciar Sesion
-        #region Botones
+        #region Botones y Metodos para el Movimiento del Formulario
         private void bntClose_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Está Seguro de Cerrar?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 Application.Exit();
             }
+        }
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
         /**Metodos para el Movimiento de la Ventana*/
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -121,6 +120,11 @@ namespace sistema
                 Application.Exit();
             }
         }
-        #endregion Botones
+        #endregion Botones y Metodos para el Movimiento del Formulario
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
