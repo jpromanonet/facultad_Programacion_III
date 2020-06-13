@@ -101,8 +101,6 @@ Public Class proveedores
             lIdProveedor.Visible = False
             btnGuardar.Visible = False
             btnBorrar.Visible = False
-            Panel1.Visible = False
-            Panel3.Visible = False
         Else
             gridProveedores.DataSource = dataSet.Tables("proveedores")
             gridProveedores.Refresh()
@@ -110,8 +108,6 @@ Public Class proveedores
             lIdProveedor.Visible = True
             btnGuardar.Visible = True
             btnBorrar.Visible = True
-            Panel1.Visible = True
-            Panel3.Visible = True
         End If
 
     End Sub
@@ -154,9 +150,6 @@ Public Class proveedores
             btnBorrar.Visible = False
             btnNuevo.Visible = False
             pCampos.Visible = False
-            Panel1.Visible = False
-            Panel2.Visible = False
-            Panel3.Visible = False
             Exit Sub
         Else
             tfila = gridProveedores.Rows(fila).Cells(0).Value
@@ -165,9 +158,6 @@ Public Class proveedores
             btnBorrar.Visible = True
             btnNuevo.Visible = True
             pCampos.Visible = True
-            Panel1.Visible = True
-            Panel2.Visible = True
-            Panel3.Visible = True
             CargarCamposClientes()
         End If
     End Sub
