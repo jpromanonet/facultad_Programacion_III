@@ -22,14 +22,19 @@ Partial Class proveedores
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(proveedores))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.pnlTitulo = New System.Windows.Forms.Panel()
         Me.pRestaurar = New System.Windows.Forms.PictureBox()
         Me.pMini = New System.Windows.Forms.PictureBox()
         Me.pMaxi = New System.Windows.Forms.PictureBox()
         Me.pCerrar = New System.Windows.Forms.PictureBox()
         Me.pnlMenu = New System.Windows.Forms.Panel()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.lblSistema = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnBorrar = New System.Windows.Forms.Button()
+        Me.btnNuevo = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.pnlContenido = New System.Windows.Forms.Panel()
         Me.lIdProveedor = New System.Windows.Forms.Label()
@@ -66,21 +71,16 @@ Partial Class proveedores
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.tBuscar = New System.Windows.Forms.TextBox()
-        Me.btnBorrar = New System.Windows.Forms.Button()
-        Me.btnNuevo = New System.Windows.Forms.Button()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.lblSistema = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pnlTitulo.SuspendLayout()
         CType(Me.pRestaurar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pMini, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pMaxi, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pCerrar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlMenu.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlContenido.SuspendLayout()
         Me.pCampos.SuspendLayout()
         CType(Me.gridProveedores, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlTitulo
@@ -159,11 +159,80 @@ Partial Class proveedores
         Me.pnlMenu.Size = New System.Drawing.Size(221, 615)
         Me.pnlMenu.TabIndex = 3
         '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.Label13.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.Label13.Location = New System.Drawing.Point(9, 152)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(204, 16)
+        Me.Label13.TabIndex = 9
+        Me.Label13.Text = "____________________________"
+        '
+        'lblSistema
+        '
+        Me.lblSistema.AutoSize = True
+        Me.lblSistema.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSistema.ForeColor = System.Drawing.Color.White
+        Me.lblSistema.Location = New System.Drawing.Point(33, 114)
+        Me.lblSistema.Name = "lblSistema"
+        Me.lblSistema.Size = New System.Drawing.Size(142, 28)
+        Me.lblSistema.TabIndex = 7
+        Me.lblSistema.Text = "Gestionsys"
+        Me.lblSistema.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(7, 11)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(188, 81)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 8
+        Me.PictureBox1.TabStop = False
+        '
+        'btnBorrar
+        '
+        Me.btnBorrar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnBorrar.FlatAppearance.BorderSize = 0
+        Me.btnBorrar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBorrar.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBorrar.ForeColor = System.Drawing.Color.White
+        Me.btnBorrar.Image = CType(resources.GetObject("btnBorrar.Image"), System.Drawing.Image)
+        Me.btnBorrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnBorrar.Location = New System.Drawing.Point(12, 325)
+        Me.btnBorrar.Name = "btnBorrar"
+        Me.btnBorrar.Size = New System.Drawing.Size(171, 64)
+        Me.btnBorrar.TabIndex = 6
+        Me.btnBorrar.Text = "Eliminar"
+        Me.btnBorrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnBorrar.UseVisualStyleBackColor = True
+        '
+        'btnNuevo
+        '
+        Me.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnNuevo.FlatAppearance.BorderSize = 0
+        Me.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNuevo.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNuevo.ForeColor = System.Drawing.Color.White
+        Me.btnNuevo.Image = CType(resources.GetObject("btnNuevo.Image"), System.Drawing.Image)
+        Me.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnNuevo.Location = New System.Drawing.Point(12, 253)
+        Me.btnNuevo.Name = "btnNuevo"
+        Me.btnNuevo.Size = New System.Drawing.Size(163, 64)
+        Me.btnNuevo.TabIndex = 4
+        Me.btnNuevo.Text = "Agregar"
+        Me.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btnNuevo.UseVisualStyleBackColor = True
+        '
         'btnGuardar
         '
         Me.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnGuardar.FlatAppearance.BorderSize = 0
-        Me.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGuardar.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGuardar.ForeColor = System.Drawing.Color.White
@@ -489,7 +558,7 @@ Partial Class proveedores
         Me.gridProveedores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -539,7 +608,7 @@ Partial Class proveedores
         'btnBuscar
         '
         Me.btnBuscar.FlatAppearance.BorderSize = 0
-        Me.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBuscar.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscar.ForeColor = System.Drawing.Color.Black
@@ -559,75 +628,6 @@ Partial Class proveedores
         Me.tBuscar.Name = "tBuscar"
         Me.tBuscar.Size = New System.Drawing.Size(685, 30)
         Me.tBuscar.TabIndex = 1
-        '
-        'btnBorrar
-        '
-        Me.btnBorrar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnBorrar.FlatAppearance.BorderSize = 0
-        Me.btnBorrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBorrar.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBorrar.ForeColor = System.Drawing.Color.White
-        Me.btnBorrar.Image = CType(resources.GetObject("btnBorrar.Image"), System.Drawing.Image)
-        Me.btnBorrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnBorrar.Location = New System.Drawing.Point(12, 325)
-        Me.btnBorrar.Name = "btnBorrar"
-        Me.btnBorrar.Size = New System.Drawing.Size(171, 64)
-        Me.btnBorrar.TabIndex = 6
-        Me.btnBorrar.Text = "Eliminar"
-        Me.btnBorrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnBorrar.UseVisualStyleBackColor = True
-        '
-        'btnNuevo
-        '
-        Me.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnNuevo.FlatAppearance.BorderSize = 0
-        Me.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNuevo.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNuevo.ForeColor = System.Drawing.Color.White
-        Me.btnNuevo.Image = CType(resources.GetObject("btnNuevo.Image"), System.Drawing.Image)
-        Me.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnNuevo.Location = New System.Drawing.Point(12, 253)
-        Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(163, 64)
-        Me.btnNuevo.TabIndex = 4
-        Me.btnNuevo.Text = "Agregar"
-        Me.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnNuevo.UseVisualStyleBackColor = True
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.SystemColors.HotTrack
-        Me.Label13.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.Label13.Location = New System.Drawing.Point(9, 152)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(204, 16)
-        Me.Label13.TabIndex = 9
-        Me.Label13.Text = "____________________________"
-        '
-        'lblSistema
-        '
-        Me.lblSistema.AutoSize = True
-        Me.lblSistema.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSistema.ForeColor = System.Drawing.Color.White
-        Me.lblSistema.Location = New System.Drawing.Point(33, 114)
-        Me.lblSistema.Name = "lblSistema"
-        Me.lblSistema.Size = New System.Drawing.Size(142, 28)
-        Me.lblSistema.TabIndex = 7
-        Me.lblSistema.Text = "Gestionsys"
-        Me.lblSistema.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(7, 11)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(188, 81)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 8
-        Me.PictureBox1.TabStop = False
         '
         'proveedores
         '
@@ -652,12 +652,12 @@ Partial Class proveedores
         CType(Me.pCerrar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlMenu.ResumeLayout(False)
         Me.pnlMenu.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlContenido.ResumeLayout(False)
         Me.pnlContenido.PerformLayout()
         Me.pCampos.ResumeLayout(False)
         Me.pCampos.PerformLayout()
         CType(Me.gridProveedores, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

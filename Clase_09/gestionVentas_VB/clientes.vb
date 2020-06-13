@@ -1,6 +1,7 @@
 ﻿Imports System.Runtime.InteropServices
 'Clases para ADO, para la Conexion con la DB
 Imports System.Data.SqlClient
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Status
 
 Public Class clientes
     Dim ar As String

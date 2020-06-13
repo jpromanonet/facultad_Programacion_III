@@ -160,7 +160,7 @@ Partial Class inicio
         '
         Me.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnClientes.FlatAppearance.BorderSize = 0
-        Me.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClientes.Font = New System.Drawing.Font("Consolas", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClientes.ForeColor = System.Drawing.Color.White
@@ -177,7 +177,7 @@ Partial Class inicio
         '
         Me.btnProvvedores.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnProvvedores.FlatAppearance.BorderSize = 0
-        Me.btnProvvedores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(80, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.btnProvvedores.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption
         Me.btnProvvedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnProvvedores.Font = New System.Drawing.Font("Comic Sans MS", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnProvvedores.ForeColor = System.Drawing.Color.White
