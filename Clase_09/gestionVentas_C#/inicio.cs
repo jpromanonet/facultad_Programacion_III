@@ -296,5 +296,15 @@ namespace sistema
             lNameUser.Text = Routines.nameUser;
             lLastNameUser.Text = Routines.lastNameUser;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lNameUser_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -115,7 +115,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gridClientes.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridClientes.EnableHeadersVisualStyles = false;
-            this.gridClientes.Location = new System.Drawing.Point(526, 82);
+            this.gridClientes.Location = new System.Drawing.Point(526, 121);
             this.gridClientes.Name = "gridClientes";
             this.gridClientes.ReadOnly = true;
             this.gridClientes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -127,7 +127,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridClientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.gridClientes.Size = new System.Drawing.Size(508, 239);
+            this.gridClientes.Size = new System.Drawing.Size(550, 239);
             this.gridClientes.TabIndex = 15;
             this.gridClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridClientes_CellContentClick);
             this.gridClientes.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridClientes_CellEnter);
@@ -160,7 +160,7 @@
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label2.ForeColor = System.Drawing.Color.White;
-            this.Label2.Location = new System.Drawing.Point(622, 63);
+            this.Label2.Location = new System.Drawing.Point(622, 102);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(151, 16);
             this.Label2.TabIndex = 14;
@@ -172,7 +172,7 @@
             this.Label1.AutoSize = true;
             this.Label1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label1.ForeColor = System.Drawing.Color.White;
-            this.Label1.Location = new System.Drawing.Point(555, 6);
+            this.Label1.Location = new System.Drawing.Point(555, 45);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(319, 23);
             this.Label1.TabIndex = 13;
@@ -182,9 +182,9 @@
             // 
             this.tBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tBuscar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBuscar.Location = new System.Drawing.Point(559, 32);
+            this.tBuscar.Location = new System.Drawing.Point(559, 71);
             this.tBuscar.Name = "tBuscar";
-            this.tBuscar.Size = new System.Drawing.Size(305, 30);
+            this.tBuscar.Size = new System.Drawing.Size(347, 30);
             this.tBuscar.TabIndex = 12;
             // 
             // btnBuscar
@@ -200,7 +200,7 @@
             this.btnBuscar.IconChar = FontAwesome.Sharp.IconChar.Searchengin;
             this.btnBuscar.IconColor = System.Drawing.Color.White;
             this.btnBuscar.IconSize = 32;
-            this.btnBuscar.Location = new System.Drawing.Point(899, 23);
+            this.btnBuscar.Location = new System.Drawing.Point(941, 62);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Rotation = 0D;
             this.btnBuscar.Size = new System.Drawing.Size(110, 47);
@@ -215,7 +215,7 @@
             // 
             this.pnlBordeBuscar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.pnlBordeBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pnlBordeBuscar.Location = new System.Drawing.Point(893, 23);
+            this.pnlBordeBuscar.Location = new System.Drawing.Point(935, 62);
             this.pnlBordeBuscar.Name = "pnlBordeBuscar";
             this.pnlBordeBuscar.Size = new System.Drawing.Size(8, 47);
             this.pnlBordeBuscar.TabIndex = 77;
@@ -224,7 +224,7 @@
             // 
             this.pnlBordeNuevo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlBordeNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(253)))), ((int)(((byte)(114)))));
-            this.pnlBordeNuevo.Location = new System.Drawing.Point(591, 349);
+            this.pnlBordeNuevo.Location = new System.Drawing.Point(612, 388);
             this.pnlBordeNuevo.Name = "pnlBordeNuevo";
             this.pnlBordeNuevo.Size = new System.Drawing.Size(8, 47);
             this.pnlBordeNuevo.TabIndex = 79;
@@ -242,7 +242,7 @@
             this.btnNuevo.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
             this.btnNuevo.IconColor = System.Drawing.Color.White;
             this.btnNuevo.IconSize = 32;
-            this.btnNuevo.Location = new System.Drawing.Point(597, 349);
+            this.btnNuevo.Location = new System.Drawing.Point(618, 388);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Rotation = 0D;
             this.btnNuevo.Size = new System.Drawing.Size(110, 47);
@@ -257,7 +257,7 @@
             // 
             this.pnlBordeEditar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlBordeEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.pnlBordeEditar.Location = new System.Drawing.Point(735, 349);
+            this.pnlBordeEditar.Location = new System.Drawing.Point(756, 388);
             this.pnlBordeEditar.Name = "pnlBordeEditar";
             this.pnlBordeEditar.Size = new System.Drawing.Size(8, 47);
             this.pnlBordeEditar.TabIndex = 81;
@@ -275,7 +275,7 @@
             this.btnEditar.IconChar = FontAwesome.Sharp.IconChar.UserShield;
             this.btnEditar.IconColor = System.Drawing.Color.White;
             this.btnEditar.IconSize = 32;
-            this.btnEditar.Location = new System.Drawing.Point(741, 349);
+            this.btnEditar.Location = new System.Drawing.Point(762, 388);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Rotation = 0D;
             this.btnEditar.Size = new System.Drawing.Size(113, 47);
@@ -290,7 +290,7 @@
             // 
             this.pnlBordeBorrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlBordeBorrar.BackColor = System.Drawing.Color.Red;
-            this.pnlBordeBorrar.Location = new System.Drawing.Point(881, 349);
+            this.pnlBordeBorrar.Location = new System.Drawing.Point(902, 388);
             this.pnlBordeBorrar.Name = "pnlBordeBorrar";
             this.pnlBordeBorrar.Size = new System.Drawing.Size(8, 47);
             this.pnlBordeBorrar.TabIndex = 83;
@@ -308,7 +308,7 @@
             this.btnBorrar.IconChar = FontAwesome.Sharp.IconChar.UserTimes;
             this.btnBorrar.IconColor = System.Drawing.Color.White;
             this.btnBorrar.IconSize = 32;
-            this.btnBorrar.Location = new System.Drawing.Point(887, 349);
+            this.btnBorrar.Location = new System.Drawing.Point(908, 388);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Rotation = 0D;
             this.btnBorrar.Size = new System.Drawing.Size(110, 47);
@@ -325,7 +325,7 @@
             this.lIdCliente.AutoSize = true;
             this.lIdCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.lIdCliente.ForeColor = System.Drawing.Color.White;
-            this.lIdCliente.Location = new System.Drawing.Point(534, 63);
+            this.lIdCliente.Location = new System.Drawing.Point(534, 102);
             this.lIdCliente.Name = "lIdCliente";
             this.lIdCliente.Size = new System.Drawing.Size(15, 16);
             this.lIdCliente.TabIndex = 96;
@@ -334,7 +334,7 @@
             // tApellido
             // 
             this.tApellido.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tApellido.Location = new System.Drawing.Point(135, 9);
+            this.tApellido.Location = new System.Drawing.Point(135, 48);
             this.tApellido.MaxLength = 30;
             this.tApellido.Name = "tApellido";
             this.tApellido.Size = new System.Drawing.Size(359, 23);
@@ -345,7 +345,7 @@
             this.Label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label4.AutoSize = true;
             this.Label4.ForeColor = System.Drawing.Color.White;
-            this.Label4.Location = new System.Drawing.Point(25, 12);
+            this.Label4.Location = new System.Drawing.Point(25, 51);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(65, 16);
             this.Label4.TabIndex = 47;
@@ -354,7 +354,7 @@
             // tNombre
             // 
             this.tNombre.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tNombre.Location = new System.Drawing.Point(135, 45);
+            this.tNombre.Location = new System.Drawing.Point(135, 84);
             this.tNombre.MaxLength = 30;
             this.tNombre.Name = "tNombre";
             this.tNombre.Size = new System.Drawing.Size(359, 23);
@@ -365,7 +365,7 @@
             this.Label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label5.AutoSize = true;
             this.Label5.ForeColor = System.Drawing.Color.White;
-            this.Label5.Location = new System.Drawing.Point(25, 48);
+            this.Label5.Location = new System.Drawing.Point(25, 87);
             this.Label5.Name = "Label5";
             this.Label5.Size = new System.Drawing.Size(66, 16);
             this.Label5.TabIndex = 50;
@@ -374,7 +374,7 @@
             // tDNI
             // 
             this.tDNI.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tDNI.Location = new System.Drawing.Point(135, 81);
+            this.tDNI.Location = new System.Drawing.Point(135, 120);
             this.tDNI.MaxLength = 8;
             this.tDNI.Name = "tDNI";
             this.tDNI.Size = new System.Drawing.Size(359, 23);
@@ -385,7 +385,7 @@
             this.Label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label6.AutoSize = true;
             this.Label6.ForeColor = System.Drawing.Color.White;
-            this.Label6.Location = new System.Drawing.Point(25, 84);
+            this.Label6.Location = new System.Drawing.Point(25, 123);
             this.Label6.Name = "Label6";
             this.Label6.Size = new System.Drawing.Size(95, 16);
             this.Label6.TabIndex = 57;
@@ -394,7 +394,7 @@
             // tDireccion
             // 
             this.tDireccion.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tDireccion.Location = new System.Drawing.Point(135, 262);
+            this.tDireccion.Location = new System.Drawing.Point(135, 301);
             this.tDireccion.MaxLength = 50;
             this.tDireccion.Name = "tDireccion";
             this.tDireccion.Size = new System.Drawing.Size(359, 23);
@@ -405,7 +405,7 @@
             this.Label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label8.AutoSize = true;
             this.Label8.ForeColor = System.Drawing.Color.White;
-            this.Label8.Location = new System.Drawing.Point(25, 265);
+            this.Label8.Location = new System.Drawing.Point(25, 304);
             this.Label8.Name = "Label8";
             this.Label8.Size = new System.Drawing.Size(62, 16);
             this.Label8.TabIndex = 59;
@@ -414,7 +414,7 @@
             // tCP
             // 
             this.tCP.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tCP.Location = new System.Drawing.Point(395, 298);
+            this.tCP.Location = new System.Drawing.Point(395, 337);
             this.tCP.MaxLength = 10;
             this.tCP.Name = "tCP";
             this.tCP.Size = new System.Drawing.Size(99, 23);
@@ -425,7 +425,7 @@
             this.Label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label9.AutoSize = true;
             this.Label9.ForeColor = System.Drawing.Color.White;
-            this.Label9.Location = new System.Drawing.Point(25, 301);
+            this.Label9.Location = new System.Drawing.Point(25, 340);
             this.Label9.Name = "Label9";
             this.Label9.Size = new System.Drawing.Size(61, 16);
             this.Label9.TabIndex = 60;
@@ -434,7 +434,7 @@
             // tProvincia
             // 
             this.tProvincia.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tProvincia.Location = new System.Drawing.Point(135, 334);
+            this.tProvincia.Location = new System.Drawing.Point(135, 373);
             this.tProvincia.MaxLength = 30;
             this.tProvincia.Name = "tProvincia";
             this.tProvincia.Size = new System.Drawing.Size(359, 23);
@@ -445,7 +445,7 @@
             this.Label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label10.AutoSize = true;
             this.Label10.ForeColor = System.Drawing.Color.White;
-            this.Label10.Location = new System.Drawing.Point(25, 376);
+            this.Label10.Location = new System.Drawing.Point(25, 415);
             this.Label10.Name = "Label10";
             this.Label10.Size = new System.Drawing.Size(60, 16);
             this.Label10.TabIndex = 61;
@@ -454,7 +454,7 @@
             // tTelefono
             // 
             this.tTelefono.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tTelefono.Location = new System.Drawing.Point(135, 373);
+            this.tTelefono.Location = new System.Drawing.Point(135, 412);
             this.tTelefono.MaxLength = 35;
             this.tTelefono.Name = "tTelefono";
             this.tTelefono.Size = new System.Drawing.Size(359, 23);
@@ -465,7 +465,7 @@
             this.Label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label11.AutoSize = true;
             this.Label11.ForeColor = System.Drawing.Color.White;
-            this.Label11.Location = new System.Drawing.Point(25, 417);
+            this.Label11.Location = new System.Drawing.Point(25, 456);
             this.Label11.Name = "Label11";
             this.Label11.Size = new System.Drawing.Size(41, 16);
             this.Label11.TabIndex = 62;
@@ -475,7 +475,7 @@
             // 
             this.DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateTimePicker1.Location = new System.Drawing.Point(156, 118);
+            this.DateTimePicker1.Location = new System.Drawing.Point(156, 157);
             this.DateTimePicker1.Name = "DateTimePicker1";
             this.DateTimePicker1.Size = new System.Drawing.Size(168, 23);
             this.DateTimePicker1.TabIndex = 56;
@@ -485,7 +485,7 @@
             this.Label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label12.AutoSize = true;
             this.Label12.ForeColor = System.Drawing.Color.White;
-            this.Label12.Location = new System.Drawing.Point(25, 123);
+            this.Label12.Location = new System.Drawing.Point(25, 162);
             this.Label12.Name = "Label12";
             this.Label12.Size = new System.Drawing.Size(125, 16);
             this.Label12.TabIndex = 63;
@@ -494,7 +494,7 @@
             // tComentario
             // 
             this.tComentario.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tComentario.Location = new System.Drawing.Point(135, 446);
+            this.tComentario.Location = new System.Drawing.Point(135, 485);
             this.tComentario.MaxLength = 200;
             this.tComentario.Multiline = true;
             this.tComentario.Name = "tComentario";
@@ -507,7 +507,7 @@
             this.Label16.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label16.AutoSize = true;
             this.Label16.ForeColor = System.Drawing.Color.White;
-            this.Label16.Location = new System.Drawing.Point(25, 459);
+            this.Label16.Location = new System.Drawing.Point(25, 498);
             this.Label16.Name = "Label16";
             this.Label16.Size = new System.Drawing.Size(77, 16);
             this.Label16.TabIndex = 64;
@@ -516,7 +516,7 @@
             // tLocalidad
             // 
             this.tLocalidad.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tLocalidad.Location = new System.Drawing.Point(135, 298);
+            this.tLocalidad.Location = new System.Drawing.Point(135, 337);
             this.tLocalidad.MaxLength = 20;
             this.tLocalidad.Name = "tLocalidad";
             this.tLocalidad.Size = new System.Drawing.Size(218, 23);
@@ -527,7 +527,7 @@
             this.Label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label3.AutoSize = true;
             this.Label3.ForeColor = System.Drawing.Color.White;
-            this.Label3.Location = new System.Drawing.Point(25, 340);
+            this.Label3.Location = new System.Drawing.Point(25, 379);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(59, 16);
             this.Label3.TabIndex = 66;
@@ -538,7 +538,7 @@
             this.CheckBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.CheckBox1.AutoSize = true;
             this.CheckBox1.ForeColor = System.Drawing.Color.White;
-            this.CheckBox1.Location = new System.Drawing.Point(428, 121);
+            this.CheckBox1.Location = new System.Drawing.Point(428, 160);
             this.CheckBox1.Name = "CheckBox1";
             this.CheckBox1.Size = new System.Drawing.Size(72, 20);
             this.CheckBox1.TabIndex = 67;
@@ -548,7 +548,7 @@
             // tCUIT
             // 
             this.tCUIT.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tCUIT.Location = new System.Drawing.Point(135, 153);
+            this.tCUIT.Location = new System.Drawing.Point(135, 192);
             this.tCUIT.MaxLength = 30;
             this.tCUIT.Name = "tCUIT";
             this.tCUIT.Size = new System.Drawing.Size(359, 23);
@@ -559,7 +559,7 @@
             this.Label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label7.AutoSize = true;
             this.Label7.ForeColor = System.Drawing.Color.White;
-            this.Label7.Location = new System.Drawing.Point(25, 156);
+            this.Label7.Location = new System.Drawing.Point(25, 195);
             this.Label7.Name = "Label7";
             this.Label7.Size = new System.Drawing.Size(101, 16);
             this.Label7.TabIndex = 69;
@@ -568,7 +568,7 @@
             // tUsuario
             // 
             this.tUsuario.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tUsuario.Location = new System.Drawing.Point(135, 189);
+            this.tUsuario.Location = new System.Drawing.Point(135, 228);
             this.tUsuario.MaxLength = 10;
             this.tUsuario.Name = "tUsuario";
             this.tUsuario.Size = new System.Drawing.Size(359, 23);
@@ -579,7 +579,7 @@
             this.Label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label13.AutoSize = true;
             this.Label13.ForeColor = System.Drawing.Color.White;
-            this.Label13.Location = new System.Drawing.Point(25, 192);
+            this.Label13.Location = new System.Drawing.Point(25, 231);
             this.Label13.Name = "Label13";
             this.Label13.Size = new System.Drawing.Size(52, 16);
             this.Label13.TabIndex = 71;
@@ -588,7 +588,7 @@
             // tClave
             // 
             this.tClave.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tClave.Location = new System.Drawing.Point(135, 225);
+            this.tClave.Location = new System.Drawing.Point(135, 264);
             this.tClave.MaxLength = 30;
             this.tClave.Name = "tClave";
             this.tClave.Size = new System.Drawing.Size(359, 23);
@@ -599,7 +599,7 @@
             this.Label14.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label14.AutoSize = true;
             this.Label14.ForeColor = System.Drawing.Color.White;
-            this.Label14.Location = new System.Drawing.Point(25, 232);
+            this.Label14.Location = new System.Drawing.Point(25, 271);
             this.Label14.Name = "Label14";
             this.Label14.Size = new System.Drawing.Size(71, 16);
             this.Label14.TabIndex = 73;
@@ -610,7 +610,7 @@
             this.Label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label15.AutoSize = true;
             this.Label15.ForeColor = System.Drawing.Color.White;
-            this.Label15.Location = new System.Drawing.Point(362, 301);
+            this.Label15.Location = new System.Drawing.Point(362, 340);
             this.Label15.Name = "Label15";
             this.Label15.Size = new System.Drawing.Size(26, 16);
             this.Label15.TabIndex = 74;
@@ -619,7 +619,7 @@
             // tEmail
             // 
             this.tEmail.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tEmail.Location = new System.Drawing.Point(135, 410);
+            this.tEmail.Location = new System.Drawing.Point(135, 449);
             this.tEmail.MaxLength = 35;
             this.tEmail.Name = "tEmail";
             this.tEmail.Size = new System.Drawing.Size(359, 23);
@@ -630,7 +630,7 @@
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label17.AutoSize = true;
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(374, 123);
+            this.label17.Location = new System.Drawing.Point(374, 162);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(48, 16);
             this.label17.TabIndex = 97;
@@ -641,7 +641,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.ClientSize = new System.Drawing.Size(1046, 497);
+            this.ClientSize = new System.Drawing.Size(1088, 574);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.lIdCliente);
             this.Controls.Add(this.pnlBordeBorrar);
