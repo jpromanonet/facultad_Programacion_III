@@ -119,7 +119,7 @@
             this.lGestion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lGestion.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lGestion.ForeColor = System.Drawing.Color.White;
-            this.lGestion.Location = new System.Drawing.Point(102, 16);
+            this.lGestion.Location = new System.Drawing.Point(134, 36);
             this.lGestion.Name = "lGestion";
             this.lGestion.Size = new System.Drawing.Size(175, 34);
             this.lGestion.TabIndex = 3;
@@ -129,10 +129,10 @@
             // pLogoTipo
             // 
             this.pLogoTipo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pLogoTipo.Image = global::sistema.Properties.Resources.gestion;
+            this.pLogoTipo.Image = ((System.Drawing.Image)(resources.GetObject("pLogoTipo.Image")));
             this.pLogoTipo.Location = new System.Drawing.Point(0, 3);
             this.pLogoTipo.Name = "pLogoTipo";
-            this.pLogoTipo.Size = new System.Drawing.Size(64, 47);
+            this.pLogoTipo.Size = new System.Drawing.Size(110, 99);
             this.pLogoTipo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pLogoTipo.TabIndex = 2;
             this.pLogoTipo.TabStop = false;
@@ -158,6 +158,7 @@
             // pnlContent
             // 
             this.pnlContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.pnlContent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlContent.BackgroundImage")));
             this.pnlContent.Controls.Add(this.label2);
             this.pnlContent.Controls.Add(this.label1);
             this.pnlContent.Controls.Add(this.btnSalir);
@@ -176,11 +177,12 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(78, 112);
+            this.label2.Location = new System.Drawing.Point(58, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 30);
+            this.label2.Size = new System.Drawing.Size(142, 28);
             this.label2.TabIndex = 10;
             this.label2.Text = "Contraseña";
             // 
@@ -188,29 +190,30 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(78, 53);
+            this.label1.Location = new System.Drawing.Point(58, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 30);
+            this.label1.Size = new System.Drawing.Size(103, 28);
             this.label1.TabIndex = 9;
             this.label1.Text = "Usuario";
             // 
             // btnSalir
             // 
             this.btnSalir.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnSalir.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.FlatAppearance.BorderSize = 0;
-            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(86)))), ((int)(((byte)(109)))));
+            this.btnSalir.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnSalir.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.btnSalir.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.Red;
             this.btnSalir.IconChar = FontAwesome.Sharp.IconChar.PowerOff;
             this.btnSalir.IconColor = System.Drawing.Color.Red;
             this.btnSalir.IconSize = 32;
-            this.btnSalir.Location = new System.Drawing.Point(389, 273);
+            this.btnSalir.Location = new System.Drawing.Point(389, 324);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Rotation = 0D;
             this.btnSalir.Size = new System.Drawing.Size(212, 57);
@@ -224,11 +227,11 @@
             // iconClave
             // 
             this.iconClave.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconClave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.iconClave.BackColor = System.Drawing.Color.Transparent;
             this.iconClave.IconChar = FontAwesome.Sharp.IconChar.Key;
             this.iconClave.IconColor = System.Drawing.Color.White;
             this.iconClave.IconSize = 38;
-            this.iconClave.Location = new System.Drawing.Point(24, 112);
+            this.iconClave.Location = new System.Drawing.Point(13, 102);
             this.iconClave.Name = "iconClave";
             this.iconClave.Size = new System.Drawing.Size(40, 38);
             this.iconClave.TabIndex = 6;
@@ -237,11 +240,11 @@
             // iconUsuario
             // 
             this.iconUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.iconUsuario.BackColor = System.Drawing.Color.Transparent;
             this.iconUsuario.IconChar = FontAwesome.Sharp.IconChar.UserNinja;
             this.iconUsuario.IconColor = System.Drawing.Color.White;
             this.iconUsuario.IconSize = 38;
-            this.iconUsuario.Location = new System.Drawing.Point(24, 40);
+            this.iconUsuario.Location = new System.Drawing.Point(12, 40);
             this.iconUsuario.Name = "iconUsuario";
             this.iconUsuario.Size = new System.Drawing.Size(40, 38);
             this.iconUsuario.TabIndex = 5;
@@ -250,7 +253,7 @@
             // txtClave
             // 
             this.txtClave.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtClave.Location = new System.Drawing.Point(209, 117);
+            this.txtClave.Location = new System.Drawing.Point(209, 112);
             this.txtClave.Name = "txtClave";
             this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(392, 25);
@@ -267,18 +270,18 @@
             // btnLogin
             // 
             this.btnLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
+            this.btnLogin.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.FlatAppearance.BorderSize = 0;
-            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(86)))), ((int)(((byte)(109)))));
+            this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnLogin.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.Chartreuse;
+            this.btnLogin.Flip = FontAwesome.Sharp.FlipOrientation.Vertical;
+            this.btnLogin.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.ForestGreen;
             this.btnLogin.IconChar = FontAwesome.Sharp.IconChar.SignInAlt;
-            this.btnLogin.IconColor = System.Drawing.Color.Chartreuse;
+            this.btnLogin.IconColor = System.Drawing.Color.ForestGreen;
             this.btnLogin.IconSize = 32;
-            this.btnLogin.Location = new System.Drawing.Point(389, 189);
+            this.btnLogin.Location = new System.Drawing.Point(389, 216);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Rotation = 0D;
             this.btnLogin.Size = new System.Drawing.Size(212, 57);
