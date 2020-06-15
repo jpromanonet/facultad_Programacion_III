@@ -314,12 +314,14 @@
             // 
             this.Label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label4.AutoSize = true;
+            this.Label4.BackColor = System.Drawing.Color.Transparent;
+            this.Label4.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label4.ForeColor = System.Drawing.Color.White;
             this.Label4.Location = new System.Drawing.Point(25, 12);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(65, 16);
+            this.Label4.Size = new System.Drawing.Size(55, 13);
             this.Label4.TabIndex = 47;
-            this.Label4.Text = "Apellido/s:";
+            this.Label4.Text = "Apellido";
             // 
             // tNombre
             // 
@@ -334,12 +336,14 @@
             // 
             this.Label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label5.AutoSize = true;
+            this.Label5.BackColor = System.Drawing.Color.Transparent;
+            this.Label5.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label5.ForeColor = System.Drawing.Color.White;
             this.Label5.Location = new System.Drawing.Point(25, 48);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(66, 16);
+            this.Label5.Size = new System.Drawing.Size(43, 13);
             this.Label5.TabIndex = 50;
-            this.Label5.Text = "Nombre/s:";
+            this.Label5.Text = "Nombre";
             // 
             // tDNI
             // 
@@ -354,12 +358,14 @@
             // 
             this.Label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label6.AutoSize = true;
+            this.Label6.BackColor = System.Drawing.Color.Transparent;
+            this.Label6.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label6.ForeColor = System.Drawing.Color.White;
             this.Label6.Location = new System.Drawing.Point(25, 84);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(95, 16);
+            this.Label6.Size = new System.Drawing.Size(25, 13);
             this.Label6.TabIndex = 57;
-            this.Label6.Text = "DNI (solo núm.)";
+            this.Label6.Text = "DNI";
             // 
             // tDireccion
             // 
@@ -374,10 +380,12 @@
             // 
             this.Label8.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label8.AutoSize = true;
+            this.Label8.BackColor = System.Drawing.Color.Transparent;
+            this.Label8.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label8.ForeColor = System.Drawing.Color.White;
             this.Label8.Location = new System.Drawing.Point(25, 265);
             this.Label8.Name = "Label8";
-            this.Label8.Size = new System.Drawing.Size(62, 16);
+            this.Label8.Size = new System.Drawing.Size(67, 13);
             this.Label8.TabIndex = 59;
             this.Label8.Text = "Dirección:";
             // 
@@ -394,10 +402,12 @@
             // 
             this.Label9.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label9.AutoSize = true;
+            this.Label9.BackColor = System.Drawing.Color.Transparent;
+            this.Label9.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label9.ForeColor = System.Drawing.Color.White;
             this.Label9.Location = new System.Drawing.Point(25, 301);
             this.Label9.Name = "Label9";
-            this.Label9.Size = new System.Drawing.Size(61, 16);
+            this.Label9.Size = new System.Drawing.Size(67, 13);
             this.Label9.TabIndex = 60;
             this.Label9.Text = "Localidad:";
             // 
@@ -414,10 +424,12 @@
             // 
             this.Label10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label10.AutoSize = true;
+            this.Label10.BackColor = System.Drawing.Color.Transparent;
+            this.Label10.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label10.ForeColor = System.Drawing.Color.White;
             this.Label10.Location = new System.Drawing.Point(25, 376);
             this.Label10.Name = "Label10";
-            this.Label10.Size = new System.Drawing.Size(60, 16);
+            this.Label10.Size = new System.Drawing.Size(61, 13);
             this.Label10.TabIndex = 61;
             this.Label10.Text = "Teléfono:";
             // 
@@ -434,32 +446,37 @@
             // 
             this.Label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label11.AutoSize = true;
+            this.Label11.BackColor = System.Drawing.Color.Transparent;
+            this.Label11.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label11.ForeColor = System.Drawing.Color.White;
             this.Label11.Location = new System.Drawing.Point(25, 417);
             this.Label11.Name = "Label11";
-            this.Label11.Size = new System.Drawing.Size(41, 16);
+            this.Label11.Size = new System.Drawing.Size(43, 13);
             this.Label11.TabIndex = 62;
             this.Label11.Text = "Email:";
             // 
             // DateTimePicker1
             // 
             this.DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.DateTimePicker1.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateTimePicker1.Location = new System.Drawing.Point(156, 118);
+            this.DateTimePicker1.Location = new System.Drawing.Point(135, 116);
             this.DateTimePicker1.Name = "DateTimePicker1";
-            this.DateTimePicker1.Size = new System.Drawing.Size(168, 23);
+            this.DateTimePicker1.Size = new System.Drawing.Size(218, 22);
             this.DateTimePicker1.TabIndex = 56;
             // 
             // Label12
             // 
             this.Label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label12.AutoSize = true;
+            this.Label12.BackColor = System.Drawing.Color.Transparent;
+            this.Label12.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label12.ForeColor = System.Drawing.Color.White;
             this.Label12.Location = new System.Drawing.Point(25, 123);
             this.Label12.Name = "Label12";
-            this.Label12.Size = new System.Drawing.Size(125, 16);
+            this.Label12.Size = new System.Drawing.Size(67, 13);
             this.Label12.TabIndex = 63;
-            this.Label12.Text = "Fecha de Nacimiento:";
+            this.Label12.Text = "Nacimiento";
             // 
             // tComentario
             // 
@@ -476,10 +493,12 @@
             // 
             this.Label16.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label16.AutoSize = true;
+            this.Label16.BackColor = System.Drawing.Color.Transparent;
+            this.Label16.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label16.ForeColor = System.Drawing.Color.White;
             this.Label16.Location = new System.Drawing.Point(25, 459);
             this.Label16.Name = "Label16";
-            this.Label16.Size = new System.Drawing.Size(77, 16);
+            this.Label16.Size = new System.Drawing.Size(79, 13);
             this.Label16.TabIndex = 64;
             this.Label16.Text = "Comentarios:";
             // 
@@ -496,10 +515,12 @@
             // 
             this.Label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label3.AutoSize = true;
+            this.Label3.BackColor = System.Drawing.Color.Transparent;
+            this.Label3.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label3.ForeColor = System.Drawing.Color.White;
             this.Label3.Location = new System.Drawing.Point(25, 340);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(59, 16);
+            this.Label3.Size = new System.Drawing.Size(67, 13);
             this.Label3.TabIndex = 66;
             this.Label3.Text = "Provincia:";
             // 
@@ -507,13 +528,15 @@
             // 
             this.CheckBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.CheckBox1.AutoSize = true;
+            this.CheckBox1.BackColor = System.Drawing.Color.Transparent;
+            this.CheckBox1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CheckBox1.ForeColor = System.Drawing.Color.White;
-            this.CheckBox1.Location = new System.Drawing.Point(428, 121);
+            this.CheckBox1.Location = new System.Drawing.Point(417, 119);
             this.CheckBox1.Name = "CheckBox1";
-            this.CheckBox1.Size = new System.Drawing.Size(72, 20);
+            this.CheckBox1.Size = new System.Drawing.Size(74, 17);
             this.CheckBox1.TabIndex = 67;
             this.CheckBox1.Text = "¿Activo?";
-            this.CheckBox1.UseVisualStyleBackColor = true;
+            this.CheckBox1.UseVisualStyleBackColor = false;
             // 
             // tCUIT
             // 
@@ -528,12 +551,14 @@
             // 
             this.Label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label7.AutoSize = true;
+            this.Label7.BackColor = System.Drawing.Color.Transparent;
+            this.Label7.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label7.ForeColor = System.Drawing.Color.White;
             this.Label7.Location = new System.Drawing.Point(25, 156);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(101, 16);
+            this.Label7.Size = new System.Drawing.Size(31, 13);
             this.Label7.TabIndex = 69;
-            this.Label7.Text = "CUIT (solo núm.)";
+            this.Label7.Text = "CUIT";
             // 
             // tUsuario
             // 
@@ -548,10 +573,12 @@
             // 
             this.Label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label13.AutoSize = true;
+            this.Label13.BackColor = System.Drawing.Color.Transparent;
+            this.Label13.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label13.ForeColor = System.Drawing.Color.White;
             this.Label13.Location = new System.Drawing.Point(25, 192);
             this.Label13.Name = "Label13";
-            this.Label13.Size = new System.Drawing.Size(52, 16);
+            this.Label13.Size = new System.Drawing.Size(55, 13);
             this.Label13.TabIndex = 71;
             this.Label13.Text = "Usuario:";
             // 
@@ -568,10 +595,12 @@
             // 
             this.Label14.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label14.AutoSize = true;
+            this.Label14.BackColor = System.Drawing.Color.Transparent;
+            this.Label14.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label14.ForeColor = System.Drawing.Color.White;
             this.Label14.Location = new System.Drawing.Point(25, 232);
             this.Label14.Name = "Label14";
-            this.Label14.Size = new System.Drawing.Size(71, 16);
+            this.Label14.Size = new System.Drawing.Size(73, 13);
             this.Label14.TabIndex = 73;
             this.Label14.Text = "Contraseña:";
             // 
@@ -579,10 +608,12 @@
             // 
             this.Label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Label15.AutoSize = true;
+            this.Label15.BackColor = System.Drawing.Color.Transparent;
+            this.Label15.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label15.ForeColor = System.Drawing.Color.White;
             this.Label15.Location = new System.Drawing.Point(362, 301);
             this.Label15.Name = "Label15";
-            this.Label15.Size = new System.Drawing.Size(26, 16);
+            this.Label15.Size = new System.Drawing.Size(25, 13);
             this.Label15.TabIndex = 74;
             this.Label15.Text = "CP:";
             // 
@@ -599,10 +630,12 @@
             // 
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(374, 123);
+            this.label17.Location = new System.Drawing.Point(362, 120);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(48, 16);
+            this.label17.Size = new System.Drawing.Size(49, 13);
             this.label17.TabIndex = 97;
             this.label17.Text = "Estado:";
             // 
