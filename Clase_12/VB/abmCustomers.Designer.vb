@@ -318,7 +318,7 @@ Partial Class abmCustomers
         Me.gridClientes.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Verdana", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -434,7 +434,7 @@ Partial Class abmCustomers
         Me.gridFacturas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Verdana", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -455,7 +455,7 @@ Partial Class abmCustomers
         Me.DataGridViewTextBoxColumn2.HeaderText = "N° Factura"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        Me.DataGridViewTextBoxColumn2.Width = 92
+        Me.DataGridViewTextBoxColumn2.Width = 98
         '
         'DataGridViewTextBoxColumn3
         '
@@ -463,7 +463,7 @@ Partial Class abmCustomers
         Me.DataGridViewTextBoxColumn3.HeaderText = "Fecha"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        Me.DataGridViewTextBoxColumn3.Width = 62
+        Me.DataGridViewTextBoxColumn3.Width = 69
         '
         'Total
         '
@@ -471,7 +471,7 @@ Partial Class abmCustomers
         Me.Total.HeaderText = "Total"
         Me.Total.Name = "Total"
         Me.Total.ReadOnly = True
-        Me.Total.Width = 62
+        Me.Total.Width = 65
         '
         'lnfact
         '
@@ -489,7 +489,7 @@ Partial Class abmCustomers
         Me.Subtotal.HeaderText = "Subtotal"
         Me.Subtotal.Name = "Subtotal"
         Me.Subtotal.ReadOnly = True
-        Me.Subtotal.Width = 80
+        Me.Subtotal.Width = 86
         '
         'Cant
         '
@@ -497,7 +497,7 @@ Partial Class abmCustomers
         Me.Cant.HeaderText = "Cant"
         Me.Cant.Name = "Cant"
         Me.Cant.ReadOnly = True
-        Me.Cant.Width = 56
+        Me.Cant.Width = 60
         '
         'PconIVA
         '
@@ -505,7 +505,7 @@ Partial Class abmCustomers
         Me.PconIVA.HeaderText = "PconIVA"
         Me.PconIVA.Name = "PconIVA"
         Me.PconIVA.ReadOnly = True
-        Me.PconIVA.Width = 74
+        Me.PconIVA.Width = 84
         '
         'IVA
         '
@@ -513,7 +513,7 @@ Partial Class abmCustomers
         Me.IVA.HeaderText = "IVA"
         Me.IVA.Name = "IVA"
         Me.IVA.ReadOnly = True
-        Me.IVA.Width = 50
+        Me.IVA.Width = 54
         '
         'DataGridViewTextBoxColumn6
         '
@@ -521,7 +521,7 @@ Partial Class abmCustomers
         Me.DataGridViewTextBoxColumn6.HeaderText = "Precio"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        Me.DataGridViewTextBoxColumn6.Width = 68
+        Me.DataGridViewTextBoxColumn6.Width = 72
         '
         'DataGridViewTextBoxColumn5
         '
@@ -539,7 +539,7 @@ Partial Class abmCustomers
         Me.gridDetalles.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Verdana", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
         DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
@@ -575,7 +575,7 @@ Partial Class abmCustomers
         Me.Font = New System.Drawing.Font("Verdana", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.Name = "abmCustomers"
-        Me.Text = "ABM-Clientes"
+        Me.Text = "CRUD | Customers | Juan P. Romano"
         Me.pCampos.ResumeLayout(False)
         Me.pCampos.PerformLayout()
         CType(Me.gridClientes, System.ComponentModel.ISupportInitialize).EndInit()
