@@ -297,11 +297,11 @@ Partial Class abmCustomers
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label7.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(20, 9)
+        Me.Label7.Location = New System.Drawing.Point(26, 9)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(181, 13)
+        Me.Label7.Size = New System.Drawing.Size(175, 13)
         Me.Label7.TabIndex = 60
-        Me.Label7.Text = "Escribe el Nombre o Apellido:"
+        Me.Label7.Text = "Buscar por nombre o apellido"
         '
         'tBuscar
         '
@@ -383,7 +383,7 @@ Partial Class abmCustomers
         '
         'bEliminar
         '
-        Me.bEliminar.BackColor = System.Drawing.Color.Crimson
+        Me.bEliminar.BackColor = System.Drawing.Color.IndianRed
         Me.bEliminar.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bEliminar.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.bEliminar.Location = New System.Drawing.Point(224, 0)
@@ -395,7 +395,7 @@ Partial Class abmCustomers
         '
         'bNuevoCli
         '
-        Me.bNuevoCli.BackColor = System.Drawing.Color.Olive
+        Me.bNuevoCli.BackColor = System.Drawing.SystemColors.HotTrack
         Me.bNuevoCli.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bNuevoCli.Location = New System.Drawing.Point(114, 0)
         Me.bNuevoCli.Name = "bNuevoCli"
@@ -406,7 +406,7 @@ Partial Class abmCustomers
         '
         'bGuardar
         '
-        Me.bGuardar.BackColor = System.Drawing.Color.Coral
+        Me.bGuardar.BackColor = System.Drawing.Color.ForestGreen
         Me.bGuardar.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bGuardar.Location = New System.Drawing.Point(4, 0)
         Me.bGuardar.Name = "bGuardar"
@@ -434,9 +434,9 @@ Partial Class abmCustomers
         Me.gridFacturas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Verdana", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.gridFacturas.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
@@ -455,7 +455,7 @@ Partial Class abmCustomers
         Me.DataGridViewTextBoxColumn2.HeaderText = "N° Factura"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        Me.DataGridViewTextBoxColumn2.Width = 98
+        Me.DataGridViewTextBoxColumn2.Width = 92
         '
         'DataGridViewTextBoxColumn3
         '
@@ -463,7 +463,7 @@ Partial Class abmCustomers
         Me.DataGridViewTextBoxColumn3.HeaderText = "Fecha"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         Me.DataGridViewTextBoxColumn3.ReadOnly = True
-        Me.DataGridViewTextBoxColumn3.Width = 69
+        Me.DataGridViewTextBoxColumn3.Width = 62
         '
         'Total
         '
@@ -471,7 +471,7 @@ Partial Class abmCustomers
         Me.Total.HeaderText = "Total"
         Me.Total.Name = "Total"
         Me.Total.ReadOnly = True
-        Me.Total.Width = 65
+        Me.Total.Width = 62
         '
         'lnfact
         '
@@ -489,7 +489,7 @@ Partial Class abmCustomers
         Me.Subtotal.HeaderText = "Subtotal"
         Me.Subtotal.Name = "Subtotal"
         Me.Subtotal.ReadOnly = True
-        Me.Subtotal.Width = 86
+        Me.Subtotal.Width = 80
         '
         'Cant
         '
@@ -497,7 +497,7 @@ Partial Class abmCustomers
         Me.Cant.HeaderText = "Cant"
         Me.Cant.Name = "Cant"
         Me.Cant.ReadOnly = True
-        Me.Cant.Width = 60
+        Me.Cant.Width = 56
         '
         'PconIVA
         '
@@ -505,7 +505,7 @@ Partial Class abmCustomers
         Me.PconIVA.HeaderText = "PconIVA"
         Me.PconIVA.Name = "PconIVA"
         Me.PconIVA.ReadOnly = True
-        Me.PconIVA.Width = 84
+        Me.PconIVA.Width = 74
         '
         'IVA
         '
@@ -513,7 +513,7 @@ Partial Class abmCustomers
         Me.IVA.HeaderText = "IVA"
         Me.IVA.Name = "IVA"
         Me.IVA.ReadOnly = True
-        Me.IVA.Width = 54
+        Me.IVA.Width = 50
         '
         'DataGridViewTextBoxColumn6
         '
@@ -521,7 +521,7 @@ Partial Class abmCustomers
         Me.DataGridViewTextBoxColumn6.HeaderText = "Precio"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         Me.DataGridViewTextBoxColumn6.ReadOnly = True
-        Me.DataGridViewTextBoxColumn6.Width = 72
+        Me.DataGridViewTextBoxColumn6.Width = 68
         '
         'DataGridViewTextBoxColumn5
         '
@@ -539,9 +539,9 @@ Partial Class abmCustomers
         Me.gridDetalles.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Verdana", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Consolas", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.gridDetalles.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle3
