@@ -139,7 +139,7 @@ namespace sistema
         /**Botones de Minimizar Restaurar y Maximizar*/
         private void bntClose_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Está Seguro de Cerrar?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            if (MessageBox.Show("¿Está seguro de que desea salir?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 Application.Exit();
             }
