@@ -65,7 +65,7 @@ namespace sistema
                 }
                 else
                 {
-                    Interaction.MsgBox("El Usuario o Contraseña no son Correctos.Intentelo de Nuevo.", MsgBoxStyle.Information, "Iniciar Sesión");
+                    Interaction.MsgBox("Usuario o contraseña inorrectos, intentelo de nuevo, por favor.", MsgBoxStyle.Information, "Iniciar sesión");
                 }
             }
         }
@@ -74,7 +74,7 @@ namespace sistema
         #region Botones y Metodos para el Movimiento del Formulario
         private void bntClose_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Está Seguro de Cerrar?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            if (MessageBox.Show("¿Está seguro de que desea salir?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -101,12 +101,12 @@ namespace sistema
             // Guardamos el caracter del enter
             string enter = Constants.vbCrLf;
             if (txtUsuario.Text.Trim().Length < 3)
-                errores += "Debe Igresar un Usuario." + enter;
+                errores += "Debe ingresar un usuario." + enter;
             if (txtClave.Text.Length < 6)
-                errores += "Debe Igresar una Contraseña." + enter;
+                errores += "Debe ingresar una contraseña." + enter;
             if (errores.Length > 0)
             {
-                MessageBox.Show("Hubo errores, Por Favor Verifique y Corrija Antes de Intentar de Nuevo:" + enter + enter + errores, "Errores", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Error, por Favor verifique y corrija antes de intentar de nuevo:" + enter + enter + errores, "Errores", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             else
@@ -115,7 +115,7 @@ namespace sistema
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Está Seguro de Cerrar?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            if (MessageBox.Show("¿Está seguro de que desea salir?", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 Application.Exit();
             }
